@@ -1,0 +1,39 @@
+- Học được cách dùng addEventListener : keyup, keydown
+- CallBack: 
+	+ Là 1 hàm
+	+ Được truyền qua đối số trong một hàm khác
+-Fetch:
+	+ Giúp lấy dữ liệu từ api: API -> Fetch -> Json
+	+ Sau đó dùng JSON.parse lấy ra được JS
+	+ Render ra giao diện với HTML
+	
+	- Cú pháp:
+	var api;
+	fetch(api)
+		.then(function (response){
+			// reponse chính là 1 prosmise
+			// Khi trong .then trả về 1 promise, khi đó
+				ta có thể .then thêm một lần nữa ở bên ngoài
+		})
+		.then(function (response) {
+			
+		})
+-Promise:
+	Cú pháp:
+	var promise = new Promise(
+		function(resolve, reject) {
+			// When successful, start resolve() 
+			// When failed, strart reject()
+		}
+	)
+
+	promise
+		.then(function()){
+			Được sử dụng khi thành công (resolve)
+		}
+		.catch(function()){
+			Được sử dụng khi từ chối (reject)
+		}
+		.finally(function()){
+
+		}
